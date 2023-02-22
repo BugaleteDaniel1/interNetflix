@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { Home } from "./pages/Home";
+import { Browse } from "./pages/Browse";
 import { Navbar } from "./components/Navbar";
 import { FriendBar } from "./components/FriendBar";
 
@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Browse />} />
       </Routes>
       <FriendBar />
     </div>

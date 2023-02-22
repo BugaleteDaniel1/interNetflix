@@ -28,4 +28,9 @@ a {
 .app {
   display: flex;
   justify-content: space-between;
+  height: 100svh;
+}
+.main {
+  background-color: var(--primary-color);
+  width: 100%;
 }

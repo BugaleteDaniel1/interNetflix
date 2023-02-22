@@ -2,3 +2,12 @@
   display: flex;
   flex-direction: column;
 }
+.title {
+  text-transform: capitalize;
+}
+.active {
+  color: var(--title-color);
+}
+.active > span > svg {
+  fill: var(--accent-color);
+}

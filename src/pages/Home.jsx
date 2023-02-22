@@ -6,10 +6,10 @@ export const Home = () => {
   const data = useMovieContext();
   console.log(data);
   return (
-    <>
+    <main>
       <SearchBar />
       <Banner />
       <PeopleReview />
-    </>
+    </main>
   );
 };

@@ -9,10 +9,23 @@
 
 :root {
   --font-family-1: "Roboto", sans-serif;
+  --title-color: #000000;
+  --primary-color: #cacaca;
+  --accent-color: #eb3223;
 }
 
 body {
   margin: 0;
   font-family: var(--font-family-1);
-  font-weight: 400;
+}
+
+a {
+  font-family: var(--font-family-1);
+  text-transform: capitalize;
+  text-decoration: none;
+  color: gray;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
 }

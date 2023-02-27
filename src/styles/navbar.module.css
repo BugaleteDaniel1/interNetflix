@@ -1,3 +1,7 @@
+.navbar {
+  padding: 0 30px;
+  border-right: 2px solid rgb(0, 0, 0, 0.1);
+}
 .linkContainer {
   display: flex;
   flex-direction: column;
@@ -10,4 +14,11 @@
 }
 .active > span > svg {
   fill: var(--accent-color);
+}
+.link {
+  margin: 10px 0;
+  font-size: 0.75rem;
+}
+.link > span {
+  margin-right: 5px;
 }

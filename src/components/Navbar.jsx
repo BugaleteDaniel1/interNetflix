@@ -6,12 +6,14 @@ export const Navbar = () => {
   const navLinks = navData.map((menu) => {
     const sublinks = menu.submenus.map((sublink) => {
       return (
-        <div key={sublink.submenuTitle}>
-          <Link to={sublink.path}>
-            <span>{sublink.submenuIcon}</span>
-            <span>{sublink.submenuTitle}</span>
-          </Link>
-        </div>
+        <Link
+          key={sublink.submenuTitle}
+          className={NavCSS.link}
+          to={sublink.path}
+        >
+          <span>{sublink.submenuIcon}</span>
+          <span>{sublink.submenuTitle}</span>
+        </Link>
       );
     });
     return (
@@ -23,7 +25,7 @@ export const Navbar = () => {
   });
 
   return (
-    <nav>
+    <nav className={NavCSS.navbar}>
       <h1>interNetflix</h1>
       <div>{navLinks}</div>
     </nav>

@@ -5,14 +5,18 @@ export const FriendBar = () => {
   const pals = friends.map((pers) => {
     return (
       <div className={FriendsCSS.imgContainer}>
-        <img src={pers.personImg} alt="a image of your friend" />
+        <img
+          className={FriendsCSS.img}
+          src={pers.personImg}
+          alt="a image of your friend"
+        />
       </div>
     );
   });
 
   return (
-    <div>
-      <button>+</button>
+    <div className={FriendsCSS.friendsSidebar}>
+      <button className={FriendsCSS.addBtn}>+</button>
       {pals}
     </div>
   );

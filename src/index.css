@@ -12,11 +12,21 @@
   --title-color: #000000;
   --primary-color: #cacaca;
   --accent-color: #eb3223;
+  --white-color: #fff;
+  --main-background: #fbfbfb;
+  --red-btn: #ff3232;
 }
 
 body {
   margin: 0;
   font-family: var(--font-family-1);
+}
+
+button {
+  border: none;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 a {
@@ -31,6 +41,7 @@ a {
   height: 100svh;
 }
 .main {
-  background-color: var(--primary-color);
+  background-color: var(--main-background);
   width: 100%;
+  padding: 20px;
 }

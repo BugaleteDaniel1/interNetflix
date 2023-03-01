@@ -1,0 +1,20 @@
+section {
+  color: var(--primary-color);
+}
+.card {
+  flex: 1 0 20%;
+  padding: calc(var(--padding) / 3);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+.friendName {
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+.comm {
+  font-size: calc(var(--small-font) * 1.3);
+}

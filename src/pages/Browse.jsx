@@ -1,15 +1,10 @@
 import { SearchBar } from "../components/browse-components/SearchBar";
-import { Banner } from "../components/browse-components/Banner";
-import { PeopleReview } from "../components/browse-components/PeopleReview";
-import { useMovieContext } from "../contexts/movieContext";
+import { CurrentMovie } from "../components/browse-components/CurrentMovie";
 export const Browse = () => {
-  const data = useMovieContext();
-  console.log(data);
   return (
     <main className="main">
       <SearchBar />
-      <Banner />
-      <PeopleReview />
+      <CurrentMovie />
     </main>
   );
 };

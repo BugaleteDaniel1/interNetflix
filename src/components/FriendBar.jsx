@@ -4,7 +4,7 @@ import FriendsCSS from "../styles/friends.module.css";
 export const FriendBar = () => {
   const pals = friends.map((pers) => {
     return (
-      <div className={FriendsCSS.imgContainer}>
+      <div key={pers.id} className={FriendsCSS.imgContainer}>
         <img
           className={FriendsCSS.img}
           src={pers.personImg}

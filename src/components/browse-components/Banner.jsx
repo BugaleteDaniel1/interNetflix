@@ -34,9 +34,7 @@ export const Banner = () => {
           style={{ backgroundImage: `url(${imgUrl + el.backdrop_path})` }}
         >
           <div className={BannerCSS.info}>
-            <div className={BannerCSS.rating}>
-              Overall Rating: {el.vote_average}
-            </div>
+            <div className="rating">Overall Rating: {el.vote_average}</div>
             <div className={BannerCSS.bottom}>
               <h3 className={BannerCSS.title}>{el.original_title}</h3>
               <button className="watch-btn">watch </button>

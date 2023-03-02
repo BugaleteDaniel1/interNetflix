@@ -19,17 +19,20 @@
   --border-radius: 20px;
   --box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
   --small-font: 0.5rem;
+  --bottom-box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
 }
 
 body {
   margin: 0;
   font-family: var(--font-family-1);
 }
-h1,
-h2,
-h3,
+
 h4 {
   margin: 0;
+}
+h3 {
+  margin: 5px;
+  color: var(--title-color);
 }
 
 button {
@@ -55,6 +58,9 @@ a {
   width: 100%;
   padding: 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .watch-btn {
@@ -72,4 +78,12 @@ a {
   height: 25px;
   border-radius: 10px;
   margin-left: 10px;
+}
+.rating {
+  background-color: brown;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  color: var(--white-color);
+  font-size: var(--small-font);
 }

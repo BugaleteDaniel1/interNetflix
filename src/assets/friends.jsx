@@ -6,8 +6,7 @@ export const friends = [
   {
     personName: "jack",
     personImg: Pers1,
-    personComment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, possimus.",
+    personComment: "Lorem ipsum dolor sit amet. Rem, possimus.",
     id: 1,
   },
   {

@@ -6,7 +6,11 @@ export const Comments = () => {
     return (
       <div key={friend.id} className={CommentsCSS.card}>
         <div className={CommentsCSS.cardTop}>
-          <img src={friend.personImg} alt="a picture of your friend" />
+          <img
+            className={CommentsCSS.img}
+            src={friend.personImg}
+            alt="a picture of your friend"
+          />
           <h4 className={CommentsCSS.friendName}>{friend.personName}</h4>
         </div>
         <div className={CommentsCSS.comm}>{friend.personComment}</div>

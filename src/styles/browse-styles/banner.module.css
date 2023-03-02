@@ -5,15 +5,20 @@
 }
 .posterImg {
   width: 3rem;
+  box-shadow: var(--box-shadow);
 }
 
 .posterSection {
+  height: 100%;
   display: flex;
   gap: 20%;
   margin-top: var(--padding);
 }
 .container {
   flex: 1 0 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .banner {
@@ -23,7 +28,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 40%;
+  height: 100%;
 }
 .postersContainer {
   position: absolute;
@@ -40,12 +45,4 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.rating {
-  background-color: brown;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: var(--border-radius);
-  color: var(--white-color);
-  font-size: var(--small-font);
 }
